@@ -110,3 +110,45 @@
 19. `sudo docker compose stop`
 
 Команда останавливает запущенные контейнеры без их удаления.
+
+![image](https://github.com/user-attachments/assets/1780a7b6-d2d3-430f-95e2-146f15475e63)
+
+20. `sudo docker compose down`
+
+Используемая команда для остановки и удаления контейнеров, сетей и томов, определенных в файле docker-compose.yml.
+
+![image](https://github.com/user-attachments/assets/c6e4cb97-da32-4921-ab69-bebe32e95932)
+
+21. `sudo docker compose ps`
+
+Команда показывает информацию о контейнерах, управляемых Docker Compose, определенных в файле docker-compose.yml.
+
+![image (3)](https://github.com/user-attachments/assets/e67a92a6-ab97-4298-b3e7-dead166fd241)
+
+22. `pwd`
+
+Команда выводит на экран абсолютный путь к текущей рабочей директории.
+
+![image](https://github.com/user-attachments/assets/8fccf0ff-80b0-4306-b05d-30db6d36ac67)
+
+23. `sudo git clone https://github.com/demidovas/demidova`
+
+При помощи этой команды происходит комирование репрозитория с Github.
+
+![image](https://github.com/user-attachments/assets/65b35082-eb1a-4d79-9acd-30f72877aa84)
+
+Также была использована команда ls для просмотра файлов в папке.
+
+23. `sudo vi docker-compose.yaml`
+
+Команда предназначена для открытия или создания файла docker-compose.yaml в текстовом редакторе vi с правами суперпользователя (root).
+
+![image](https://github.com/user-attachments/assets/9a5f1463-78d3-479d-acb6-ee22979642bb)
+![image](https://github.com/user-attachments/assets/13759659-0868-4a56-9b8e-847602b94c51)
+
+24. `sudo vi prometeus.yaml`
+
+Команда также используется для открытия или создания файла с именем prometheus.yaml в текстовом редакторе vi с правами суперпользователя (root).
+
+
+
