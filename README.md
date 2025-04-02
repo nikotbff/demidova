@@ -73,34 +73,40 @@
 
 Далее используется утилита cd (change directory) для смены текущего рабочего каталога в командной строке Linux, после чего выполняется ряд команд.
 
-`cd grafana_stack_for_docker`
+11. `cd grafana_stack_for_docker`
 
 Эта команда использует утилиту mkdir для создания каталогов "директорий" на файловой системе.
 
-`sudo mkdir -p /mnt/common_volume/swarm/grafana/config`
+12. `sudo mkdir -p /mnt/common_volume/swarm/grafana/config`
 
 Эта команда использует утилиту mkdir с опцией -p и расширением фигурных скобок "brace expansion" для создания нескольких каталогов в файловой системе.
 
-`sudo mkdir -p /mnt/common_volume/grafana/{grafana-config,grafana-data,prometheus-data}`
+13. `sudo mkdir -p /mnt/common_volume/grafana/{grafana-config,grafana-data,prometheus-data}`
 Эта команда использует утилиту chown для изменения владельца "owner" и группы "group" файлов и каталогов.
 
-`sudo chown -R $(id -u):$(id -g) {/mnt/common_volume/swarm/grafana/config,/mnt/common_volume/grafana}`
+14. `sudo chown -R $(id -u):$(id -g) {/mnt/common_volume/swarm/grafana/config,/mnt/common_volume/grafana}`
 
 Эта команда использует утилиту touch для создания пустого файла.
 
-`touch /mnt/common_volume/grafana/grafana-config/grafana.ini`
+15. `touch /mnt/common_volume/grafana/grafana-config/grafana.ini`
 
 Эта команда использует утилиту cp "copy" для копирования файлов.
 
-`cp config/* /mnt/common_volume/swarm/grafana/config/`
+16. `cp config/* /mnt/common_volume/swarm/grafana/config/`
 
 Эта команда использует утилиту mv "move" для переименования файла, обычно приводя имя файла к стандартному или ожидаемому.
 
-`mv grafana.yaml docker-compose.yaml`
+17. `mv grafana.yaml docker-compose.yaml`
 
 Эта команда использует docker compose для запуска и управления приложением, определенным в файле docker-compose.yaml. Она позволяет легко разворачивать и управлять сложными Docker-приложениями
 
-`sudo docker compose up -d`
+18. `sudo docker compose up -d`
 
 -d - Параметр -d в команде docker-compose up означает демонизирование процесса — запуск контейнеров в фоновом режиме.
 
+![image](https://github.com/user-attachments/assets/02180457-23a3-4c8f-991f-21870df72174)
+![image](https://github.com/user-attachments/assets/4fd6db97-83f1-44ab-8ac7-5037f8216ebc)
+
+19. `sudo docker compose stop`
+
+Команда останавливает запущенные контейнеры без их удаления.
