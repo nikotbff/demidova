@@ -165,3 +165,45 @@
 Сайт: localhost:3000 Пользователь и пароль: admin
 
 Зайдя на сайт, преобразует Dashboards для создания Dashboard.
+
+![image](https://github.com/user-attachments/assets/aeb6845b-8a02-420d-bf72-5bd36cf9c5e9)
+
+Следующий шаг: +Добавить визуализацию, после Настройте новый источник данных и вы преобразуете Prometheus.
+
+![image](https://github.com/user-attachments/assets/69659950-8482-4b4d-92aa-0baa2625adb6)
+
+Настройка: Соединение: `http://prometheus:9090` Аутентификация:`Basic authentication`
+
+В заключение`Save & test`
+
+![image](https://github.com/user-attachments/assets/cae0fa34-0730-4a82-ae83-7b5c20827cfd)
+
+Далее, спомощью `Import dashboardсозданного Dashboard` импортируется.
+
+`Find and import dashboards for common applications at grafana.com/dashboards: 1860`
+
+![image](https://github.com/user-attachments/assets/b219fd4c-9129-4c91-81af-0894c39e3419)
+
+В конце `Select Prometheusконцов Import.`
+
+![image](https://github.com/user-attachments/assets/0c420bee-12c9-4b79-ac17-877bb8e56cd3)
+
+# VictoriaMetrics
+
+Точно также с добавлением `prometheus в grafana` была добавлена `victoriametrics`. В созданном Dashboard нет данных, что нормально.
+
+![image](https://github.com/user-attachments/assets/2691459f-38ff-42f1-a594-3ec963e450bd)
+
+26. `echo -e "# TYPE light_metric1 gauge\nlight_metric1 0" | curl --data-binary @- http://localhost:8428/api/v1/import/prometheus`
+
+Эта команда отправляет метрику Prometheus в систему, работающую по адресу `http://localhost:8428`
+
+![image (8)](https://github.com/user-attachments/assets/066cef41-1e89-445e-a1ea-a3f0ebc5addc)
+
+Далее был осуществлен переход на `http://localhost:8428` - vmui
+
+![image](https://github.com/user-attachments/assets/5fba58d1-1951-4407-8b70-e95d5e724876)
+
+После, перейдя обратно в Grafana, были добавлены данные victoriametr
+
+![image](https://github.com/user-attachments/assets/4825623d-ce5a-420a-a51b-f2444b427715)
