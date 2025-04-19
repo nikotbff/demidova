@@ -160,7 +160,7 @@
 ![image (6)](https://github.com/user-attachments/assets/16eddc9b-28f4-45ab-b923-9df43bf62a6d)
 ![image](https://github.com/user-attachments/assets/6bce1916-d062-4ffc-8350-1f7e5595d0ba)
 
-#Графана
+# Графана
 
 Сайт: localhost:3000 Пользователь и пароль: admin
 
