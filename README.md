@@ -150,5 +150,18 @@
 
 Команда также используется для открытия или создания файла с именем prometheus.yaml в текстовом редакторе vi с правами суперпользователя (root).
 
+![image (7)](https://github.com/user-attachments/assets/e3f4daef-f803-4153-bdc2-8f767b72f036)
+![image](https://github.com/user-attachments/assets/6fd77001-63cb-4e96-87f2-a4b1d1cf5f88)
 
+25. `sudo vi prometeus.yaml`
 
+Команда также используется для открытия или создания файла с именем prometheus.yaml в текстовом редакторе vi с правами суперпользователя (root).
+
+![image (6)](https://github.com/user-attachments/assets/16eddc9b-28f4-45ab-b923-9df43bf62a6d)
+![image](https://github.com/user-attachments/assets/6bce1916-d062-4ffc-8350-1f7e5595d0ba)
+
+#Графана
+
+Сайт: localhost:3000 Пользователь и пароль: admin
+
+Зайдя на сайт, преобразует Dashboards для создания Dashboard.
